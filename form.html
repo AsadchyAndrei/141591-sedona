@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="main-navigation">
+        <ul>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Фото и видео</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#" class="main-navigation__link">Html academy</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--meta">
+            <ul>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Карта штата</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Информация</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Фото и видео</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="#" class="main-navigation__link">Гостиницы</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <img class="header__form-bagraund" src="http://placehold.it/150x100" alt="">
+    </header>
+
+    <main class="main">
+      <h1 class="main__title visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <div class="review">
+        <div class="review__subject">
+          <b class="review__title">Оставьте свой отзыв</b>
+          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <div class="form__personal">
+            <b class="form__title">Представьтесь:</b>
+            <label for="firstname" class="form__label-title">ИМЯ*:</label>
+            <input type="text" class="form__input-text" name="firstname" id="firstname" placeholder="Петр">
+            <label for="lastname" class="form__label-title">Фамилия*:</label>
+            <input type="text" class="form__input-text" name="lastname" id="lastname" placeholder="Иванов">
+            <label for="patronymic" class="form__label-title">Отчество*:</label>
+            <input type="text" class="form__input-text" name="patronymic" id="patronymic" placeholder="Александрович">
+          </div>
+          <div class="form__contacts">
+            <b class="form__title">Контактная информация:</b>
+            <label for="phone" class="form__label-title">Контактный телефон*:</label>
+            <input type="text" class="form__input-text" name="phone" id="phone" placeholder="Введите телефон">
+            <label for="email" class="form__label-title">Электронная почта*:</label>
+            <input type="text" class="form__input-text" name="email" id="email" placeholder="Введите e-mail">
+          </div>
+          <div class="form__impression">
+            <b class="form__title">Ваше Общее впечатление:</b>
+            <label for="positive" class="form__label-value">Скорее положительное</label>
+            <input type="radio" class="form__input-radio" name="impression" id="positive" checked>
+            <label for="negative" class="form__label-value">Скорее отрицательное</label>
+            <input type="radio" class="form__input-radio" name="impression" id="negative">
+            <label for="difficult" class="form__label-value">Затрудняюсь ответить</label>
+            <input type="radio" class="form__input-radio" name="impression" id="difficult">
+          </div>
+          <div class="form__attraction">
+            <b class="form__title">Посещенные достопримечательности:</b>
+            <label for="bridge" class="form__label-value">Мост Дьявола</label>
+            <input type="checkbox" class="form__input-checkbox" name="bridge" id="bridge" checked>
+            <label for="park" class="form__label-value">Слайд-парк</label>
+            <input type="checkbox" class="form__input-checkbox" name="park" id="park" checked>
+            <label for="mountain" class="form__label-value">Гора-Колокол</label>
+            <input type="checkbox" class="form__input-checkbox" name="mountain" id="mountain">
+            <label for="cliffs" class="form__label-value">Красные скалы</label>
+            <input type="checkbox" class="form__input-checkbox" name="cliffs" id="cliffs" checked>
+          </div>
+          <div class="form__emotions">
+            <b class="form__title">Опишите свои эмоции:</b>
+            <textarea name="text" id="text" cols="30" rows="10" class="form__text">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <b class="title">#visitSEDONA</b>
+      <div class="social">
+        <ul>
+          <li class="social__btn">Twitter</li>
+          <li class="social__btn">Facebook</li>
+          <li class="social__btn">Youtube</li>
+        </ul>
+      </div>
+      <p class="copuright">Разработано</p>
+    </footer>
+
+  </body>
+</html>
