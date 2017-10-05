@@ -1,0 +1,13 @@
+body {
+  background: green;
+  margin: 0;
+ }
+@import "header.scss";
+@import "main-navigation.scss";
+@import "main";
+@import "footer.scss";
+@import "advantages.scss";
+@import "main__title.scss";
+@import "advantages__description.scss";
+@import "advantages__description--gray.scss";
+@import "container--blue.scss";
