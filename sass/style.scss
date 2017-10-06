@@ -1,13 +1,13 @@
 body {
   background: green;
   margin: 0;
- }
+}
 @import "header.scss";
 @import "main-navigation.scss";
 @import "main-navigation__item.scss";
 @import "main-navigation__link.scss";
 @import "main-navigation__item--meta.scss";
-@import "header__index-bagraund.scss";
+@import "header__index-background.scss";
 @import "main.scss";
 @import "advantages.scss";
 @import "main__title.scss";
@@ -28,7 +28,7 @@ body {
 @import "social.scss";
 @import "social__btn.scss";
 @import "copyright.scss";
-@import "header__form-bagraund.scss";
+@import "header__form-background.scss";
 @import "visually-hidden.scss";
 @import "review.scss";
 @import "review__subject.scss";
