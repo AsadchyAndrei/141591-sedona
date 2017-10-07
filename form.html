@@ -9,7 +9,7 @@
 
     <header class="header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="container-li">
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Главная</a>
           </li>
@@ -22,25 +22,11 @@
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Html academy</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--meta">
-            <ul>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Карта штата</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Информация</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Фото и видео</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Гостиницы</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
-      <img class="header__form-bagraund" src="http://placehold.it/150x100" alt="">
+      <div class="container-logo">
+        <img class="logo" src="img/logo-sedona-mobile.svg" alt="">
+      </div>
     </header>
 
     <main class="main">
@@ -53,12 +39,15 @@
         <form class="form" action="https://echo.htmlacademy.ru">
           <div class="form__personal">
             <b class="form__title">Представьтесь:</b>
-            <label for="firstname" class="form__label-title">ИМЯ*:</label>
-            <input type="text" class="form__input-text" name="firstname" id="firstname" placeholder="Петр">
-            <label for="lastname" class="form__label-title">Фамилия*:</label>
-            <input type="text" class="form__input-text" name="lastname" id="lastname" placeholder="Иванов">
-            <label for="patronymic" class="form__label-title">Отчество*:</label>
-            <input type="text" class="form__input-text" name="patronymic" id="patronymic" placeholder="Александрович">
+            <label class="form__label-title">ИМЯ*:
+              <input type="text" class="form__input-text" name="firstname" placeholder="Петр">
+            </label>
+            <label class="form__label-title">Фамилия*:
+              <input type="text" class="form__input-text" name="lastname" placeholder="Иванов">
+            </label>
+            <label class="form__label-title">Отчество*:
+              <input type="text" class="form__input-text" name="patronymic" placeholder="Александрович">
+            </label>
           </div>
           <div class="form__contacts">
             <b class="form__title">Контактная информация:</b>
@@ -89,7 +78,7 @@
           </div>
           <div class="form__emotions">
             <b class="form__title">Опишите свои эмоции:</b>
-            <textarea name="text" id="text" cols="30" rows="10" class="form__text">Опишите подробно все свои восторги</textarea>
+            <textarea name="text" id="text" cols="20" rows="5" class="form__text">Опишите подробно все свои восторги</textarea>
           </div>
           <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         </form>
@@ -98,13 +87,23 @@
 
     <footer class="footer">
       <b class="title">#visitSEDONA</b>
-      <div class="social">
-        <ul>
-          <li class="social__btn">Twitter</li>
-          <li class="social__btn">Facebook</li>
-          <li class="social__btn">Youtube</li>
-        </ul>
-      </div>
+      <ul class="social">
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__btn social__btn--last-child">
+          <a class="social__link">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
       <p class="copyright">Разработано</p>
     </footer>
 

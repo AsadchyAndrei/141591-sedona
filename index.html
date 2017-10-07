@@ -9,7 +9,7 @@
 
     <header class="header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="container-li">
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Главная</a>
           </li>
@@ -22,30 +22,16 @@
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Html academy</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--meta">
-            <ul>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Карта штата</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Информация</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Фото и видео</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Гостиницы</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
-      <img class="header__index-bagraund" src="http://placehold.it/150x100" alt="">
+      <div class="container-logo">
+        <img class="logo" src="img/logo-sedona-mobile.svg" alt="">
+      </div>
     </header>
 
     <main class="main">
       <div class="advantages">
-        <h1 class="main__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+        <h1 class="main__title">СЕДОНА — небольшой<br> городок в АРИЗОНЕ, заслуживающий большего!</h1>
         <p class="advantages__description advantages__description--title">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
       <div class="advantages">
@@ -54,14 +40,20 @@
           <p class="advantages__description">- №1 -</p>
           <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <img class="advantages__img" src="http://placehold.it/150x100" alt="">
+        <img class="advantages__img" src="img/main-city-mobile@1x.jpg" alt="">
         <div class="container">
-          <h3 class="advantages__title">Жилье</h3>
-          <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          <h3 class="advantages__title">СУВЕНИРЫ</h3>
-          <p class="advantages__description">Не только китайского, но и местного производства!</p>
-          <h3 class="advantages__title">ЕДА</h3>
-          <p class="advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <div class="container__align-right">
+            <h3 class="advantages__title">Жилье</h3>
+            <p class="advantages__description advantages__description--padding-left-none">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="container__align-right">
+            <h3 class="advantages__title">СУВЕНИРЫ</h3>
+            <p class="advantages__description advantages__description--padding-left-none">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="container__align-right">
+            <h3 class="advantages__title">ЕДА</h3>
+            <p class="advantages__description advantages__description--padding-left-none">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </div>
         </div>
       </div>
       <div class="advantages">
@@ -69,8 +61,8 @@
           <h2 class="advantages__title advantages__title--text-white">ТАМ ЕСТЬ Мост дьявола</h2>
           <p class="advantages__description">- №2 -</p>
           <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="advantages__img" src="http://placehold.it/150x100" alt="">
         </div>
+        <img class="advantages__img" src="img/main-bridge-mobile@1x.jpg" alt="">
       </div>
       <div class="advantages">
         <div class="container container--gray">
@@ -99,19 +91,29 @@
         <b class="hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</b>
         <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="btn" href="#">НАЙТИ гостиницу</a>
-        <img class="hotel__img" src="http://placehold.it/150x100" alt="">
+        <img class="hotel__img" src="img/bg-map-mobile@1x.jpg" alt="">
       </div>
     </main>
 
     <footer class="footer">
       <b class="title">#visitSEDONA</b>
-      <div class="social">
-        <ul>
-          <li class="social__btn">Twitter</li>
-          <li class="social__btn">Facebook</li>
-          <li class="social__btn">Youtube</li>
-        </ul>
-      </div>
+      <ul class="social">
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__btn social__btn--last-child">
+          <a class="social__link">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
       <p class="copyright">Разработано</p>
     </footer>
 

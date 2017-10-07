@@ -9,7 +9,7 @@
 
     <header class="header">
       <nav class="main-navigation">
-        <ul>
+        <ul class="container-li">
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Главная</a>
           </li>
@@ -22,25 +22,11 @@
           <li class="main-navigation__item">
             <a href="#" class="main-navigation__link">Html academy</a>
           </li>
-          <li class="main-navigation__item main-navigation__item--meta">
-            <ul>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Карта штата</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Информация</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Фото и видео</a>
-              </li>
-              <li class="main-navigation__item">
-                <a href="#" class="main-navigation__link">Гостиницы</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
-      <img class="header__form-bagraund" src="http://placehold.it/150x100" alt="">
+      <div class="container-logo">
+        <img class="logo" src="img/logo-sedona-mobile.svg" alt="">
+      </div>
     </header>
 
     <main class="main">
@@ -51,25 +37,25 @@
           <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
         <div class="media__item">
-          <img src="http://placehold.it/150x100" alt="" class="media__photo">
+          <img src="img/photo-sunset-mobile@1x.jpg" alt="" class="media__photo">
           <b class="media__description">Неродные просторы</b>
           <p class="media__autor">Автор фото: Борис</p>
           <b class="media__likes">1350</b>
         </div>
         <div class="media__item">
-          <img src="http://placehold.it/150x100" alt="" class="media__photo">
+          <img src="img/photo-cactus-mobile@1x.jpg" alt="" class="media__photo">
           <b class="media__description">Местная растительность</b>
           <p class="media__autor">Автор фото: Сергей</p>
           <b class="media__likes">143</b>
         </div>
         <div class="media__item">
-          <img src="http://placehold.it/150x100" alt="" class="media__photo">
+          <img src="img/photo-roads-mobile@1x.jpg" alt="" class="media__photo">
           <b class="media__description">Дорога на север</b>
           <p class="media__autor">Автор фото: Петр</p>
           <b class="media__likes">96</b>
         </div>
         <div class="media__item">
-          <img src="http://placehold.it/150x100" alt="" class="media__photo">
+          <img src="img/photo-bridge-mobile@1x.jpg" alt="" class="media__photo">
           <b class="media__description">Мост дьявола</b>
           <p class="media__autor">Автор фото: Антон</p>
           <b class="media__likes">254</b>
@@ -77,20 +63,30 @@
         <div class="media__item">
           <h2 class="media__title">Все еще сомневаетесь?</h2>
           <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="media__video" src="http://placehold.it/150x100"></video>
+          <video class="media__video" src="#" poster="img/video-mobile@1x.jpg"></video>
         </div>
       </div>
     </main>
 
     <footer class="footer">
       <b class="title">#visitSEDONA</b>
-      <div class="social">
-        <ul>
-          <li class="social__btn">Twitter</li>
-          <li class="social__btn">Facebook</li>
-          <li class="social__btn">Youtube</li>
-        </ul>
-      </div>
+      <ul class="social">
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social__btn">
+          <a class="social__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__btn social__btn--last-child">
+          <a class="social__link">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
       <p class="copyright">Разработано</p>
     </footer>
 
