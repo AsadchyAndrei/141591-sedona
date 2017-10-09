@@ -1,6 +1,17 @@
 .main-navigation__item {
   display: flex;
+  width: 320px;
   height: 55px;
   background-color: #81b3d2;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__item {
+    background-color: #ffffff;
+    flex-basis: 166.5px;
+  }
+  .main-navigation__item:nth-child(3) {
+    margin-left: auto;
+  }
 }

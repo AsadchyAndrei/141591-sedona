@@ -2,3 +2,10 @@
   background-color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

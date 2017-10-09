@@ -3,3 +3,10 @@
   line-height: 26px;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__description--title {
+    width: 490px;
+    margin: 0 auto 55px;
+  }
+}

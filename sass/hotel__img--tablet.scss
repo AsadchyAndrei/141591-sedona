@@ -1,0 +1,9 @@
+.hotel__img--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel__img--tablet {
+    display: block;
+  }
+}
