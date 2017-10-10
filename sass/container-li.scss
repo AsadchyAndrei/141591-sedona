@@ -11,19 +11,6 @@
     flex-direction: row;
   }
 
-/*
-  .container-li::before {
-    content: "";
-    width: 102px;
-    height: 83px;
-    background-image: url("../img/logotype-tablet.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 333px;
-    z-index: 2;
-  }
-  */
-
   .container-li::after {
     content: "";
     width: $tablet-width;
