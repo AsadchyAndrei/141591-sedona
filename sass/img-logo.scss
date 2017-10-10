@@ -1,0 +1,15 @@
+.img-logo {
+  width: 102px;
+  height: 83px;
+  position: absolute;
+  left: 109px;
+  top: 220px;
+  z-index: 2; /* z-index: 1 у ".container-logo::after" */
+}
+
+@media (min-width: $tablet-width) {
+  .img-logo {
+    left: 333px;
+    top: 0;
+  }
+}

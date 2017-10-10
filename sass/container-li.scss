@@ -11,22 +11,24 @@
     flex-direction: row;
   }
 
+/*
   .container-li::before {
     content: "";
     width: 102px;
     height: 83px;
-    background-image: url("../img/logo-sedona-mobile.svg");
+    background-image: url("../img/logotype-tablet.png");
     background-repeat: no-repeat;
     position: absolute;
     left: 333px;
     z-index: 2;
   }
+  */
 
   .container-li::after {
     content: "";
     width: $tablet-width;
     height: 518px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

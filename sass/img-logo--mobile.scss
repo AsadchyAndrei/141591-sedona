@@ -1,0 +1,9 @@
+.img-logo--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .img-logo--mobile {
+    display: none;
+  }
+}
