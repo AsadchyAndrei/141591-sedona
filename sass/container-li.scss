@@ -11,17 +11,15 @@
     flex-direction: row;
   }
 
-  .container-li::after {
+  .container-li::before {
     content: "";
     width: $tablet-width;
     height: 518px;
     background-image: url("../img/back-desktop.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     position: absolute;
     left: 0;
     top: 56px;
-    z-index: 1;
   }
 }

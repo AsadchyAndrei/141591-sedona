@@ -6,3 +6,10 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__impression {
+    width: 324px;
+    order: -1;
+  }
+}

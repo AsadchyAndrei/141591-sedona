@@ -5,7 +5,7 @@
   height: 56px;
 }
 
-.container-logo::after {
+.container-logo::before {
   content: "";
   width: 320px;
   height: 389px;
@@ -15,7 +15,18 @@
   position: absolute;
   left: 0;
   top: 56px;
-  z-index: 1; /* z-index: 2 у ".img-logo" */
+}
+
+.container-logo::after {
+  content: "";
+  width: 280px;
+  height: 214px;
+  background-image: url("../img/text-index.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 20px;
+  top: 146px;
 }
 
 @media (min-width: $tablet-width) {

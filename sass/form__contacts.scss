@@ -6,3 +6,9 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__contacts {
+    width: 648px;
+  }
+}

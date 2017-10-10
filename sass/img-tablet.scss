@@ -1,9 +1,9 @@
-.img-logo--tablet {
+.img-tablet {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .img-logo--tablet {
+  .img-tablet {
     display: block;
   }
 }
