@@ -13,3 +13,9 @@
     order: -1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__impression {
+    width: 480px;
+  }
+}

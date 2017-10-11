@@ -3,3 +3,9 @@
     width: 324px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__send {
+    width: 480px;
+  }
+}

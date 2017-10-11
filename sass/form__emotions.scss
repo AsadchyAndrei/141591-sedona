@@ -12,3 +12,9 @@
     width: 648px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__emotions {
+    width: 960px;
+  }
+}

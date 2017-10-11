@@ -12,3 +12,12 @@
     width: 648px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__contacts {
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
