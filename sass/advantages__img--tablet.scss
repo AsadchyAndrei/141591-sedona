@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .advantages__img--tablet {
     display: block;
   }

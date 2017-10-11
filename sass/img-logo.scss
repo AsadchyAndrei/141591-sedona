@@ -12,3 +12,10 @@
     top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .img-logo {
+    left: 505px;
+    top: 0;
+  }
+}

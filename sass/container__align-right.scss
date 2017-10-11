@@ -14,3 +14,9 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container__align-right {
+    width: 400px;
+  }
+}

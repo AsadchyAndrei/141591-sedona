@@ -23,3 +23,9 @@
     top: 56px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container-li::before {
+    width: $desktop-width;
+  }
+}

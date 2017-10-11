@@ -10,7 +10,13 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: 768px;
+    width: $tablet-width;
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: $desktop-width;
   }
 }

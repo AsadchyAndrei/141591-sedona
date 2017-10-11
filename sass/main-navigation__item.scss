@@ -9,10 +9,16 @@
 @media (min-width: $tablet-width) {
   .main-navigation__item {
     background-color: #ffffff;
-    flex-basis: 166.5px;
+    flex-basis: 153px;
   }
 
   .main-navigation__item:nth-child(3) {
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__item {
+    flex-basis: 239px;
   }
 }

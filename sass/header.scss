@@ -19,3 +19,9 @@
     min-height: 600px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: $desktop-width;
+  }
+}
