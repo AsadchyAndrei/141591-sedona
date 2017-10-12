@@ -12,3 +12,9 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .media__subject {
+    width: 1200px;
+  }
+}

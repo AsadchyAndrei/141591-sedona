@@ -4,3 +4,9 @@
     height: 347px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .media__item--small {
+    width: 400px;
+  }
+}

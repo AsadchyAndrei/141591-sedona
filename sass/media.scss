@@ -10,3 +10,10 @@
     margin-right: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .media {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
