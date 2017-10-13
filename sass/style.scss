@@ -1,9 +1,7 @@
-body {
-  background: green;
-  margin: 0;
-}
-
+@import "scaffolding.scss";
+@import "variables.scss";
 @import "header.scss";
+@import "main-navigation.scss";
 @import "main-navigation__item.scss";
 @import "main-navigation__link.scss";
 @import "main.scss";
@@ -51,10 +49,25 @@ body {
 @import "advantages__title--text-white.scss";
 @import "container-li.scss";
 @import "container-logo.scss";
-@import "logo.scss";
 @import "container__align-right.scss";
 @import "advantages__description--padding-left-none.scss";
 @import "hotel__img.scss";
 @import "social__btn--last-child.scss";
 @import "media__photo.scss";
 @import "media__video.scss";
+@import "advantages__img--tablet.scss";
+@import "advantages__img--mobile.scss";
+@import "container--tablet.scss";
+@import "container--order.scss";
+@import "container-no-mobile.scss";
+@import "hotel__img--mobile.scss";
+@import "hotel__img--tablet.scss";
+@import "img-logo.scss";
+@import "img-mobile.scss";
+@import "img-tablet.scss";
+@import "form__send.scss";
+@import "media__item--small.scss";
+@import "img-desktop.scss";
+@import "advantages__img--desktop.scss";
+@import "hotel__img--desktop.scss";
+@import "form__title--center.scss";

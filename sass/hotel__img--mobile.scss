@@ -1,0 +1,9 @@
+.hotel__img--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel__img--mobile {
+    display: none;
+  }
+}

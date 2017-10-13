@@ -8,3 +8,10 @@
   text-decoration: none;
   padding: 17px 47px 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 458px;
+    box-sizing: border-box;
+  }
+}

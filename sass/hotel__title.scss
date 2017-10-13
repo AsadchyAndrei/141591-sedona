@@ -6,3 +6,9 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .hotel__title {
+    font-size: 30px;
+  }
+}

@@ -6,3 +6,18 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__contacts {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__contacts {
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

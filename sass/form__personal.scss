@@ -6,3 +6,15 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__personal {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__personal {
+    width: 480px;
+  }
+}

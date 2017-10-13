@@ -7,3 +7,18 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    width: 490px;
+    margin: 0 auto 30px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title {
+    width: 600px;
+  }
+}

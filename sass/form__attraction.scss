@@ -6,3 +6,19 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__attraction {
+    width: 648px;
+    height: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__attraction {
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

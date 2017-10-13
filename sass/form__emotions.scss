@@ -6,3 +6,15 @@
   flex-direction: column;
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__emotions {
+    width: 648px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__emotions {
+    width: 960px;
+  }
+}
