@@ -1,0 +1,17 @@
+.logo-list {
+  background-color: #ffffff;
+  text-align: center;
+  height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-list {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-list {
+    width: $desktop-width;
+  }
+}

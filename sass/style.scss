@@ -2,8 +2,6 @@
 @import "variables.scss";
 @import "header.scss";
 @import "main-navigation.scss";
-@import "main-navigation__item.scss";
-@import "main-navigation__link.scss";
 @import "main.scss";
 @import "advantages.scss";
 @import "main__title.scss";
@@ -47,7 +45,6 @@
 @import "media__autor.scss";
 @import "media__likes.scss";
 @import "advantages__title--text-white.scss";
-@import "container-li.scss";
 @import "container-logo.scss";
 @import "container__align-right.scss";
 @import "advantages__description--padding-left-none.scss";
@@ -71,3 +68,6 @@
 @import "advantages__img--desktop.scss";
 @import "hotel__img--desktop.scss";
 @import "form__title--center.scss";
+@import "site-list.scss";
+@import "logo-list.scss";
+@import "main-navigation__list.scss";

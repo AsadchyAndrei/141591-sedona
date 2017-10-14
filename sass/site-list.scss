@@ -1,0 +1,33 @@
+.site-list {
+  font-weight: bold;
+}
+
+.site-list a {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #81b3d2;
+  border-top: 1px solid #87bcdd;
+  border-bottom: 1px solid #70a2bf;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: $desktop-width;
+  }
+}
