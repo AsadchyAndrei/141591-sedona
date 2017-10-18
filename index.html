@@ -10,10 +10,12 @@
 
     <header class="header">
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <!-- main-navigation--opened - меню открыто и появляется кнопка-крестик;
+        main-navigation--closed - меню закрыто и появляется кнопка-гамбургер -->
         <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a>Главная</a>
             </li>
             <li class="site-list__item">
@@ -27,12 +29,15 @@
             </li>
           </ul>
           <ul class="main-navigation__list logo-list">
-            <li class="logo-list__item logo-list__item--active">
-              <a>
-              <img src="img/logo-sedona-mobile.svg" alt="">
+            <li class="logo-list__item">
+              <a href="index.html">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
               </a>
             </li>
           </ul>
+          <div class="main-navigation__bg-logo">
+            <img src="img/text-sedona-index.svg" width="282" height="214" alt="">
+          </div>
         </div>
       </nav>
     </header>
@@ -51,7 +56,7 @@
         <img class="advantages__img advantages__img--mobile" src="img/main-city-mobile@1x.jpg" alt="">
         <img class="advantages__img advantages__img--tablet" src="img/photo-city@1x.jpg" alt="">
         <img class="advantages__img advantages__img--desktop" src="img/photo-city-desktop@1x.jpg" alt="">
-        <div class="container container--tablet">
+        <div class="container container--advantages container--tablet">
           <div class="container__align-right">
             <h3 class="advantages__title">Жилье</h3>
             <p class="advantages__description advantages__description--padding-left-none">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -130,9 +135,9 @@
           </a>
         </li>
       </ul>
-      <p class="copyright">Разработано</p>
+      <p class="copyright">Разработано<img src="img/logo-htmlacademy.svg" width="27" height="34" alt=""></p>
     </footer>
-
+<!--
     <script>
       var navMain = document.querySelector('.main-navigation');
       var navToggle = document.querySelector('.main-navigation__toggle');
@@ -149,6 +154,6 @@
         }
       });
     </script>
-
+-->
   </body>
 </html>

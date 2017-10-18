@@ -19,10 +19,28 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    width: 570px;
+    width: $tablet-width;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  .site-list__item {
+    width: 20%;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .site-list a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

@@ -1,0 +1,19 @@
+.container-association {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container-association {
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-association {
+    width: 445px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

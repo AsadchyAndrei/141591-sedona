@@ -1,0 +1,15 @@
+.required-fields {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .required-fields {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: auto 0 auto auto;
+  }
+}

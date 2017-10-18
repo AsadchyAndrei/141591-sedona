@@ -1,0 +1,10 @@
+.form-container__title--personal {
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-container__title--personal {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+}

@@ -6,10 +6,22 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.copyright img {
+  margin-left: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: auto 44px auto 352px;
   }
 }

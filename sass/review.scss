@@ -1,3 +1,9 @@
 .review {
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    margin-bottom: 35px;
+  }
+}

@@ -1,0 +1,30 @@
+.form-container--impression {
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-container--impression {
+    position: relative;
+    width: 323px;
+    order: -1;
+    border: none;
+    padding: 0;
+  }
+
+  .form-container--impression::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 1px;
+    height: 293px;
+    background-color: lightgrey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-container--impression {
+    width: 480px;
+  }
+}

@@ -1,8 +1,14 @@
 .media__subject {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 40px;
   text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 30px;
+}
+
+.media__subject--video {
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,6 +16,9 @@
     width: 443px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 40px;
+    border: none;
+    margin-bottom: 45px;
   }
 }
 
