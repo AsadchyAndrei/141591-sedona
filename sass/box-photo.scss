@@ -1,0 +1,10 @@
+.box-photo {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .box-photo {
+    margin-left: 20px;
+    margin-bottom: 17px;
+  }
+}

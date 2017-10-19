@@ -1,7 +1,13 @@
 .form__input-text {
-  width: 195px;
+  width: 100%;
   font-size: 18px;
   font-weight: bold;
   color: #000000;
   text-transform: capitalize;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  padding: 17px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  margin-left: 10px;
 }

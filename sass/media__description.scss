@@ -6,3 +6,9 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .media__description {
+    color: #ffffff;
+  }
+}

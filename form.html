@@ -9,48 +9,51 @@
   <body>
 
     <header class="header">
-      <nav class="main-navigation">
-        <ul class="container-li">
-          <li class="main-navigation__item">
-            <a href="index.html" class="main-navigation__link">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="photo.html" class="main-navigation__link">Фото и видео</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link">Форма отзыва</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="https://htmlacademy.ru/" class="main-navigation__link">Html academy</a>
-          </li>
-        </ul>
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <!-- main-navigation--opened - меню открыто и появляется кнопка-крестик;
+        main-navigation--closed - меню закрыто и появляется кнопка-гамбургер -->
+        <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list logo-list">
+            <li class="logo-list__item">
+              <a href="index.html">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="main-navigation__bg-logo main-navigation__bg-logo--photo">
+            <img src="img/SEDONA.png" width="229" height="39" alt="">
+          </div>
+        </div>
       </nav>
-      <div class="container-logo">
-        <!-- Контейнер в котором будет спозиционирован логотип и меню-бургер для мобильной версии сайта. Фоновая картинка снизу - это псевдоэлемент "container-li" -->
-      </div>
-      <a class="img-logo img-mobile" href="index.html">
-        <img src="img/logo-sedona-mobile.svg" alt="">
-      </a>
-      <a class="img-logo img-tablet" href="index.html">
-        <img src="img/logotype-tablet.png" alt="">
-      </a>
-      <a class="img-logo img-desktop" href="index.html">
-        <img src="img/logotype-desktop.png" alt="">
-      </a>
     </header>
 
     <main class="main">
-      <h1 class="main__title visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
       <div class="review">
         <div class="review__subject">
           <b class="review__title">Оставьте свой отзыв</b>
           <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru">
-          <div class="form__personal">
-            <b class="form__title">Представьтесь:</b>
+          <div class="form-container form-container--personal">
+            <b class="form-container__title form-container__title--personal">Представьтесь:</b>
             <label class="form__label-title">ИМЯ*:
-              <input type="text" class="form__input-text" name="firstname" placeholder="Петр">
+              <input class="form__input-text" type="text" name="firstname" placeholder="Петр">
             </label>
             <label class="form__label-title">Фамилия*:
               <input type="text" class="form__input-text" name="lastname" placeholder="Иванов">
@@ -59,38 +62,43 @@
               <input type="text" class="form__input-text" name="patronymic" placeholder="Александрович">
             </label>
           </div>
-          <div class="form__contacts">
-            <b class="form__title form__title--center">Контактная информация:</b>
-            <label for="phone" class="form__label-title">Контактный телефон*:</label>
-            <input type="text" class="form__input-text" name="phone" id="phone" placeholder="Введите телефон">
-            <label for="email" class="form__label-title">Электронная почта*:</label>
-            <input type="text" class="form__input-text" name="email" id="email" placeholder="Введите e-mail">
+          <div class="form-container form-container--contacts">
+            <b class="form-container__title form-container__title--contacts">Контактная информация:</b>
+            <label class="form__label-title form__label-title--contacts" for="phone">Телефон*:</label>
+            <input type="text" class="form__input-text form__input-text--contacts" name="phone" id="phone" placeholder="Введите телефон">
+            <label for="email" class="form__label-title form__label-title--contacts">Электронная почта*:</label>
+            <input type="text" class="form__input-text form__input-text--contacts" name="email" id="email" placeholder="Введите e-mail">
           </div>
-          <div class="form__impression">
-            <b class="form__title">Ваше Общее впечатление:</b>
+          <div class="form-container form-container--impression">
+            <b class="form-container__title form-container__title--impression">Ваше Общее впечатление:</b>
+            <input type="radio" class="form__input-radio" name="impression" id="positive" checked hidden>
             <label for="positive" class="form__label-value">Скорее положительное</label>
-            <input type="radio" class="form__input-radio" name="impression" id="positive" checked>
+            <input type="radio" class="form__input-radio" name="impression" id="negative" hidden>
             <label for="negative" class="form__label-value">Скорее отрицательное</label>
-            <input type="radio" class="form__input-radio" name="impression" id="negative">
+            <input type="radio" class="form__input-radio" name="impression" id="difficult" hidden>
             <label for="difficult" class="form__label-value">Затрудняюсь ответить</label>
-            <input type="radio" class="form__input-radio" name="impression" id="difficult">
           </div>
-          <div class="form__attraction">
-            <b class="form__title form__title--center">Посещенные достопримечательности:</b>
-            <label for="bridge" class="form__label-value">Мост Дьявола</label>
-            <input type="checkbox" class="form__input-checkbox" name="bridge" id="bridge" checked>
-            <label for="park" class="form__label-value">Слайд-парк</label>
-            <input type="checkbox" class="form__input-checkbox" name="park" id="park" checked>
-            <label for="mountain" class="form__label-value">Гора-Колокол</label>
-            <input type="checkbox" class="form__input-checkbox" name="mountain" id="mountain">
-            <label for="cliffs" class="form__label-value">Красные скалы</label>
-            <input type="checkbox" class="form__input-checkbox" name="cliffs" id="cliffs" checked>
+          <div class="form-container form-container--attraction">
+            <b class="form-container__title form-container__title--attraction">Посещенные достопримечательности:</b>
+            <div class="container-association">
+              <input type="checkbox" class="form__input-checkbox" name="bridge" id="bridge" checked hidden>
+              <label for="bridge" class="form__label-value form__label-value--checkbox">Мост Дьявола</label>
+              <input type="checkbox" class="form__input-checkbox" name="park" id="park" checked hidden>
+              <label for="park" class="form__label-value form__label-value--checkbox">Слайд-парк</label>
+            </div>
+            <div class="container-association">
+              <input type="checkbox" class="form__input-checkbox" name="mountain" id="mountain" hidden>
+              <label for="mountain" class="form__label-value form__label-value--checkbox">Гора-Колокол</label>
+              <input type="checkbox" class="form__input-checkbox" name="cliffs" id="cliffs" checked hidden>
+              <label for="cliffs" class="form__label-value form__label-value--checkbox">Красные скалы</label>
+            </div>
           </div>
-          <div class="form__emotions">
-            <b class="form__title">Опишите свои эмоции:</b>
-            <textarea name="text" id="text" cols="20" rows="5" class="form__text">Опишите подробно все свои восторги</textarea>
+          <div class="form-container form-container--emotions">
+            <b class="form-container__title form-container__title--emotions">Опишите свои эмоции:</b>
+            <textarea name="text" id="text" class="form__text">Опишите подробно все свои восторги</textarea>
           </div>
           <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <span class="required-fields">* — обязательные поля</span>
         </form>
       </div>
     </main>
@@ -114,7 +122,7 @@
           </a>
         </li>
       </ul>
-      <p class="copyright">Разработано</p>
+      <p class="copyright">Разработано<img src="img/logo-htmlacademy.svg" width="27" height="34" alt=""></p>
     </footer>
 
   </body>

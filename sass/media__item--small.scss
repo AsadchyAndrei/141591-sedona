@@ -1,7 +1,10 @@
 @media (min-width: $tablet-width) {
   .media__item--small {
     width: 324px;
-    height: 347px;
+  }
+
+  .media__item--small:nth-child(even) {
+    background-color: rgb(234, 234, 234);
   }
 }
 

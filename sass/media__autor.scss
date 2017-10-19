@@ -6,3 +6,9 @@
   text-transform: capitalize;
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .media__autor {
+    color: #ffffff;
+  }
+}

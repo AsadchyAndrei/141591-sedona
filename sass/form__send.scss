@@ -1,6 +1,11 @@
+.form__send {
+  margin-left: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .form__send {
     width: 324px;
+    margin-left: 0;
   }
 }
 

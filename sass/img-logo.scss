@@ -2,20 +2,6 @@
   width: 102px;
   height: 83px;
   position: absolute;
-  left: 109px;
-  top: 220px;
-}
-
-@media (min-width: $tablet-width) {
-  .img-logo {
-    left: 333px;
-    top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .img-logo {
-    left: 505px;
-    top: 0;
-  }
+  left: 50%;
+  transform: translateX(-50%);
 }

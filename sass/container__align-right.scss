@@ -2,21 +2,30 @@
   width: 230px;
   text-align: left;
   padding-left: 70px;
+  padding-top: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .container__align-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 256px;
-    height: 330px;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 160px;
+    padding-bottom: 65px;
     box-sizing: border-box;
-    padding-top: 140px;
     text-align: center;
+  }
+
+  .container__align-right:nth-child(2) {
+    order: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container__align-right {
     width: 400px;
+    padding-bottom: 85px;
   }
 }
