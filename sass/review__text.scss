@@ -1,0 +1,13 @@
+.review__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    margin-bottom: 50px;
+  }
+}

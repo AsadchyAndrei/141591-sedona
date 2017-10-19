@@ -1,0 +1,23 @@
+.container--blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container--blue {
+    width: 256px;
+    height: 256px;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container--blue {
+    width: 400px;
+  }
+}

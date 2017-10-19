@@ -1,0 +1,19 @@
+.advantages__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 21px;
+    width: 151px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

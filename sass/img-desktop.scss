@@ -1,0 +1,9 @@
+.img-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .img-desktop {
+    display: block;
+  }
+}

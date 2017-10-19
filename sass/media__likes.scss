@@ -1,0 +1,22 @@
+.media__likes {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 8px;
+  padding-left: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__likes {
+    padding-top: 13px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__likes {
+    color: #ffffff;
+  }
+}

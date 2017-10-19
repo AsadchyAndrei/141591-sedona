@@ -1,0 +1,27 @@
+.media__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+
+.media__item img {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__item {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 242, 242);
+    border: none;
+  }
+
+  .media__item img {
+    margin-bottom: 0;
+  }
+}

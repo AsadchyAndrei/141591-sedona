@@ -1,0 +1,14 @@
+.media__autor {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .media__autor {
+    color: #ffffff;
+  }
+}

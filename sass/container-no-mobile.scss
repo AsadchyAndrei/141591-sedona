@@ -1,0 +1,10 @@
+.container-no-mobile {
+  background-color: rgb(238, 238, 238);
+}
+
+@media (min-width: $tablet-width) {
+  .container-no-mobile {
+    display: flex;
+    margin-bottom: 50px;
+  }
+}

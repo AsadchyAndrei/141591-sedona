@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .media__item--small {
+    width: 324px;
+  }
+
+  .media__item--small:nth-child(even) {
+    background-color: rgb(234, 234, 234);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__item--small {
+    width: 400px;
+  }
+}

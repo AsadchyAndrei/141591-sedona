@@ -1,0 +1,9 @@
+.advantages__img--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__img--mobile {
+    display: none;
+  }
+}

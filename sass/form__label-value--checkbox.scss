@@ -1,0 +1,17 @@
+.form__label-value--checkbox {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label-value--checkbox {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__label-value--checkbox {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}

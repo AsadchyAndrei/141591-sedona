@@ -1,0 +1,9 @@
+.img-mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .img-mobile {
+    display: none;
+  }
+}

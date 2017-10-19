@@ -1,0 +1,9 @@
+.hotel__img--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .hotel__img--desktop {
+    display: block;
+  }
+}

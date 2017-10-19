@@ -1,0 +1,12 @@
+.media__video {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__video {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}

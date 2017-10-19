@@ -1,0 +1,16 @@
+.form-container__title--impression {
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-container__title--impression {
+    margin-left: 0;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-container__title--impression {
+    margin-left: 80px;
+  }
+}

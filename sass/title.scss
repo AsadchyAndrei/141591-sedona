@@ -1,0 +1,17 @@
+.title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    margin: auto;
+  }
+}
