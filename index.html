@@ -31,7 +31,11 @@
           <ul class="main-navigation__list logo-list">
             <li class="logo-list__item">
               <a href="index.html">
-              <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+              </picture>
               </a>
             </li>
           </ul>
@@ -48,14 +52,16 @@
         <p class="advantages__description advantages__description--title">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </div>
       <div class="advantages">
-        <div class="container container--blue">
+        <div class="container container--blue container--intro">
           <h2 class="advantages__title advantages__title--text-white">Настоящий городок</h2>
           <p class="advantages__description">- №1 -</p>
           <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <img class="advantages__img advantages__img--mobile" src="img/main-city-mobile@1x.jpg" alt="">
-        <img class="advantages__img advantages__img--tablet" src="img/photo-city@1x.jpg" alt="">
-        <img class="advantages__img advantages__img--desktop" src="img/photo-city-desktop@1x.jpg" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+          <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="">
+        </picture>
         <div class="container container--advantages container--tablet">
           <div class="container__align-right">
             <h3 class="advantages__title">Жилье</h3>
@@ -77,9 +83,11 @@
           <p class="advantages__description">- №2 -</p>
           <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img class="advantages__img advantages__img--mobile" src="img/main-bridge-mobile@1x.jpg" alt="">
-        <img class="advantages__img advantages__img--tablet" src="img/photo-bridge@1x.jpg" alt="">
-        <img class="advantages__img advantages__img--desktop" src="img/photo-bridge-desktop@1x.jpg" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+          <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="">
+        </picture>
       </div>
       <div class="container-no-mobile">
         <div class="advantages">
@@ -111,31 +119,38 @@
         <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="btn" href="#">НАЙТИ гостиницу</a>
       </div>
-      <img class="hotel__img hotel__img--mobile" src="img/bg-map-mobile@1x.jpg" alt="">
-      <img class="hotel__img hotel__img--tablet" src="img/map-tablet.jpg" alt="">
-      <img class="hotel__img hotel__img--desktop" src="img/map-desktop.jpg" alt="">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="hotel__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="">
+      </picture>
+
     </main>
 
     <footer class="footer">
       <b class="title">#visitSEDONA</b>
       <ul class="social">
-        <li class="social__btn">
-          <a class="social__link">
+        <li>
+          <a class="social__btn social__btn--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="social__btn">
-          <a class="social__link">
+        <li>
+          <a class="social__btn social__btn--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social__btn social__btn--last-child">
-          <a class="social__link">
+        <li>
+          <a class="social__btn social__btn--last-child social__btn--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <p class="copyright">Разработано<img src="img/logo-htmlacademy.svg" width="27" height="34" alt=""></p>
+      <p class="copyright">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <!--<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">-->
+        </a>
+      </p>
     </footer>
 <!--
     <script>

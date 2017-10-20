@@ -12,8 +12,8 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: #81b3d2;
-  border-top: 1px solid #87bcdd;
-  border-bottom: 1px solid #70a2bf;
+  border-top: 1px solid rgb(154, 194, 219);
+  border-bottom: 1px solid rgb(103, 143, 168);
   text-align: center;
 }
 
@@ -47,5 +47,17 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: $desktop-width;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list a:hover,
+  .site-list a:focus {
+    background-color: #669ec0;
+  }
+
+  .site-list a:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

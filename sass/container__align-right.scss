@@ -3,6 +3,43 @@
   text-align: left;
   padding-left: 70px;
   padding-top: 35px;
+  position: relative;
+}
+
+.container__align-right:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+.container__align-right:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+.container__align-right:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +53,45 @@
     padding-bottom: 65px;
     box-sizing: border-box;
     text-align: center;
+  }
+
+  .container__align-right:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+  }
+
+  .container__align-right:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 75px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 64px 75px;
+  }
+
+  .container__align-right:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 77px;
+    height: 68px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 77px 68px;
   }
 
   .container__align-right:nth-child(2) {

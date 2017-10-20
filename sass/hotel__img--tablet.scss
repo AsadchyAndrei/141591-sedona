@@ -1,9 +1,0 @@
-.hotel__img--tablet {
-  display: none;
-}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .hotel__img--tablet {
-    display: block;
-  }
-}
