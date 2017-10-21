@@ -42,6 +42,27 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .site-list a:hover,
+  .site-list a:focus {
+    color: #81b3d2;
+  }
+
+  .site-list a:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .site-list a.active {
+    color: #766357;
+  }
+
+  .site-list a.active:hover {
+    color: #604e43;
+  }
+
+  .site-list a.active:active {
+    color: rgba(118, 99, 87, 0.3);
+  }
 }
 
 @media (min-width: $desktop-width) {

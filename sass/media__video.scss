@@ -10,3 +10,9 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .media__video {
+    margin-left: 200px;
+  }
+}

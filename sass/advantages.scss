@@ -8,3 +8,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages picture {
+    max-height: 256px;
+  }
+}

@@ -1,0 +1,25 @@
+.form-icon {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.form-icon--email {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 16px;
+  background-position: center;
+}
+
+.form-icon--tel {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+@media (min-width: $desktop-width) {
+  .form-icon--tel {
+    margin-right: auto;
+  }
+}

@@ -1,8 +1,8 @@
 .form__input-text--contacts {
+  width: calc(100% - 58px);
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 10px;
-  padding-right: 68px;
   box-sizing: border-box;
 }
 
@@ -14,6 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .form__input-text--contacts {
-    width: 315px;
+    width: 257px;
   }
 }
