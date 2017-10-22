@@ -2,3 +2,213 @@
   background-color: #ffffff;
   color: #333333;
 }
+
+.container__align-right {
+  width: 230px;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 35px;
+  position: relative;
+}
+
+.container__align-right:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+.container__align-right:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+.container__align-right:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .container__align-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    padding-left: 0;
+    padding-top: 160px;
+    padding-bottom: 65px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .container__align-right:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+  }
+
+  .container__align-right:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 75px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 64px 75px;
+  }
+
+  .container__align-right:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 77px;
+    height: 68px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 77px 68px;
+  }
+
+  .container__align-right:nth-child(2) {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container__align-right {
+    width: 400px;
+    padding-bottom: 85px;
+  }
+}
+
+.container--blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container--blue {
+    width: 256px;
+    height: 256px;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container--blue {
+    width: 400px;
+  }
+}
+
+.container--gray {
+  background-color: rgb(238, 238, 238);
+  color: #333333;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .container--gray {
+    border-top: 1px solid lightgray;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container--gray {
+    width: 256px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container--gray {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container--tablet {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container--order {
+    order: 2;
+  }
+}
+
+.container--advantages {
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .container--advantages {
+    margin-bottom: 0;
+  }
+}
+
+.container--intro {
+  position: relative;
+}
+
+@media (max-width: $mobile-width-only) {
+  .container--intro::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-left: 160px solid #81b3d2;
+  }
+
+  .container--intro::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 160px solid #81b3d2;
+  }
+}

@@ -20,3 +20,234 @@
     margin-right: 0;
   }
 }
+
+.media__subject {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 30px;
+}
+
+.media__subject--video {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .media__subject {
+    width: 443px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    border: none;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__subject {
+    width: 1200px;
+  }
+}
+
+.media__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .media__title {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.media__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__text {
+    padding: 0;
+    width: 443px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.media__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+
+.media__item img {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__item {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 242, 242);
+    border: none;
+  }
+
+  .media__item img {
+    margin-bottom: 0;
+  }
+}
+
+.media__description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .media__description {
+    color: #ffffff;
+  }
+}
+
+.media__autor {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .media__autor {
+    color: #ffffff;
+  }
+}
+
+.media__likes {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 8px;
+  padding-left: 38px;
+  position: relative;
+}
+
+.media__likes::before {
+  content: "";
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-image: url("../img/like-icon.png");
+  background-repeat: no-repeat;
+  background-size: 23px 21px;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .media__likes {
+    padding-top: 13px;
+    margin-right: 20px;
+  }
+
+  .media__likes::before {
+    top: 10px;
+    left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__likes {
+    color: #ffffff;
+  }
+
+  .media__likes::before {
+    background-image: url("../img/like-icon-desktop.png");
+  }
+}
+
+.media__photo {
+  margin-bottom: 10px;
+}
+
+.media__video {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__video {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__video {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .media__item--small {
+    width: 324px;
+  }
+
+  .media__item--small:nth-child(even) {
+    background-color: rgb(234, 234, 234);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__item--small {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .media__info {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media__info {
+    background-color: rgba(12, 12, 12, 0.3);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -18,3 +18,132 @@
     margin-right: 120px;
   }
 }
+
+.form__label-title {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form__label-title--contacts {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-right: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .form__label-title--contacts {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.form__input-text {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 17px;
+  padding-right: 4px;
+  padding-bottom: 17px;
+  margin-left: 10px;
+}
+
+.form__input-text:active,
+.form__input-text:focus {
+  padding-top: 11px;
+  padding-left: 13px;
+  padding-bottom: 13px;
+}
+
+.form__input-text--contacts {
+  width: calc(100% - 58px);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .form__input-text--contacts {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input-text--contacts {
+    width: 257px;
+  }
+}
+
+.form__label-value {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: capitalize;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 80px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label-value {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.form__label-value--checkbox {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label-value--checkbox {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__label-value--checkbox {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.form__input-radio {
+  width: 50px;
+}
+
+.form__text {
+  padding: 22px 22px 19px 21px;
+  margin-bottom: 45px;
+  min-height: 160px;
+  box-sizing: border-box;
+}
+
+.form__text:active,
+.form__text:focus {
+  padding: 18px 18px 15px 17px;
+}
+
+.form__send {
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__send {
+    width: 324px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__send {
+    width: 480px;
+  }
+}

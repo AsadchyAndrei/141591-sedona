@@ -18,3 +18,29 @@
     width: 1200px;
   }
 }
+
+.main__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    width: 490px;
+    margin: 0 auto 30px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title {
+    width: 600px;
+  }
+}

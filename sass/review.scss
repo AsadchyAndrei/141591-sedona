@@ -7,3 +7,57 @@
     margin-bottom: 35px;
   }
 }
+
+.review__subject {
+  padding-right: 20px;
+  padding-left: 22px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .review__subject {
+    border-bottom: 1px solid lightgrey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review__subject {
+    width: 443px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.review__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.review__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    margin-bottom: 50px;
+  }
+}
