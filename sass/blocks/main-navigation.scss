@@ -2,6 +2,12 @@
   position: relative;
 }
 
+.main-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .main-navigation__toggle {
   position: absolute;
   top: 0;
@@ -94,7 +100,9 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
+    .main-navigation__bg-logo {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -105,7 +113,9 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
+    .main-navigation__bg-logo {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
