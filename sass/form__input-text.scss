@@ -1,13 +1,15 @@
 .form__input-text {
   width: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  color: #000000;
-  text-transform: capitalize;
-  background-color: rgb(238, 238, 238);
-  border: none;
-  padding: 17px;
-  padding-right: 0;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 17px;
+  padding-right: 4px;
+  padding-bottom: 17px;
   margin-left: 10px;
+}
+
+.form__input-text:active,
+.form__input-text:focus {
+  padding-top: 11px;
+  padding-left: 13px;
+  padding-bottom: 13px;
 }

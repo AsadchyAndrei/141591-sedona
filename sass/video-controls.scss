@@ -1,6 +1,6 @@
 .video-controls {
   width: 280px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -25,24 +25,66 @@
   position: absolute;
   top: -3px;
   left: 36px;
+  cursor: pointer;
 }
 
 .video-controls__replay {
   width: 16px;
   height: 20px;
   margin: 22px auto 24px 25px;
+  background-image: url("../img/replay-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 16px 20px;
+  background-position: center;
+  cursor: pointer;
 }
 
 .video-controls__subtitles {
   width: 32px;
   height: 20px;
   margin: 23px 0;
+  background-image: url("../img/subtitles-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 32px 20px;
+  background-position: center;
+  cursor: pointer;
 }
 
 .video-controls__fullscreen {
   width: 20px;
   height: 20px;
   margin: 23px 23px 23px 31px;
+  background-image: url("../img/fullscreen-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width-only) {
+  .video-controls__replay:hover {
+    background-image: url("../img/replay-mobile-hover.png");
+  }
+
+  .video-controls__replay:active {
+    opacity: 0.3;
+  }
+
+  .video-controls__subtitles:hover {
+    background-image: url("../img/subtitles-mobile-hover.png");
+  }
+
+  .video-controls__subtitles:active {
+    opacity: 0.3;
+  }
+
+  .video-controls__fullscreen:hover {
+    background-image: url("../img/fullscreen-mobile-hover.png");
+  }
+
+  .video-controls__fullscreen:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -64,14 +106,17 @@
 
   .video-controls__replay {
     margin: 35px 42px 38px 35px;
+    background-image: url("../img/replay-tablet.png");
   }
 
   .video-controls__subtitles {
     margin: 36px auto 37px;
+    background-image: url("../img/subtitles-tablet.png");
   }
 
   .video-controls__fullscreen {
     margin: 36px 41px 37px 0;
+    background-image: url("../img/fullscreen-tablet.png");
   }
 }
 

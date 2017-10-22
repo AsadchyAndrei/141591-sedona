@@ -1,12 +1,11 @@
 .form__text {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333333;
-  text-transform: capitalize;
   padding: 22px 22px 19px 21px;
-  background-color: rgb(242, 242, 242);
   margin-bottom: 45px;
-  border: none;
   min-height: 160px;
   box-sizing: border-box;
+}
+
+.form__text:active,
+.form__text:focus {
+  padding: 18px 18px 15px 17px;
 }

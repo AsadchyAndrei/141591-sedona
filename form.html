@@ -22,7 +22,7 @@
               <a href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a>Форма отзыва</a>
+              <a class="active">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/">Html academy</a>
@@ -31,12 +31,16 @@
           <ul class="main-navigation__list logo-list">
             <li class="logo-list__item">
               <a href="index.html">
-              <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+                </picture>
               </a>
             </li>
           </ul>
-          <div class="main-navigation__bg-logo main-navigation__bg-logo--photo">
-            <img src="img/SEDONA.png" width="229" height="39" alt="">
+          <div class="main-navigation__bg-logo main-navigation__bg-logo--small">
+            <img src="img/text-sedona.svg" width="229" height="39" alt="">
           </div>
         </div>
       </nav>
@@ -66,8 +70,10 @@
             <b class="form-container__title form-container__title--contacts">Контактная информация:</b>
             <label class="form__label-title form__label-title--contacts" for="phone">Телефон*:</label>
             <input type="text" class="form__input-text form__input-text--contacts" name="phone" id="phone" placeholder="Введите телефон">
+            <div class="form-icon form-icon--tel"></div>
             <label for="email" class="form__label-title form__label-title--contacts">Электронная почта*:</label>
             <input type="text" class="form__input-text form__input-text--contacts" name="email" id="email" placeholder="Введите e-mail">
+            <div class="form-icon form-icon--email"></div>
           </div>
           <div class="form-container form-container--impression">
             <b class="form-container__title form-container__title--impression">Ваше Общее впечатление:</b>
@@ -106,23 +112,27 @@
     <footer class="footer">
       <b class="title">#visitSEDONA</b>
       <ul class="social">
-        <li class="social__btn">
-          <a class="social__link">
+        <li>
+          <a class="social__btn social__btn--twitter" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="social__btn">
-          <a class="social__link">
+        <li>
+          <a class="social__btn social__btn--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social__btn social__btn--last-child">
-          <a class="social__link">
+        <li class="social__btn--last-child">
+          <a class="social__btn social__btn--youtube" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <p class="copyright">Разработано<img src="img/logo-htmlacademy.svg" width="27" height="34" alt=""></p>
+      <p class="copyright">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
+        </a>
+      </p>
     </footer>
 
   </body>

@@ -1,9 +1,0 @@
-.advantages__img--desktop {
-  display: none;
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__img--desktop {
-    display: block;
-  }
-}

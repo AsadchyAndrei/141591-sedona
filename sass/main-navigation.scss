@@ -77,15 +77,92 @@
 .main-navigation__bg-logo {
   display: flex;
   height: 389px;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 768px auto;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
-.main-navigation__bg-logo--photo {
-  height: 158px;
+@media (min-width: $tablet-width) {
+  .main-navigation__bg-logo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 518px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__bg-logo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px auto;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+  }
 }
 
 .main-navigation__bg-logo img {
   margin: auto;
+}
+
+.main-navigation__bg-logo--small img {
+  margin: auto auto 67px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__bg-logo img {
+    width: 460px;
+    height: auto;
+  }
+}
+
+.main-navigation__bg-logo--small {
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__bg-logo--small {
+    height: 290px;
+  }
+
+  .main-navigation__bg-logo--small img {
+    margin: auto auto 117px auto;
+  }
+}
+
+.main-navigation::before {
+  z-index: 10;
+  content: "";
+  width: 320px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/intro-triangle.png");
+  background-repeat: no-repeat;
+  background-size: 320px 57px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation::before {
+    width: 768px;
+    background-image: url("../img/intro-triangle-tablet.png");
+    background-size: 768px 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation::before {
+    width: 1200px;
+    background-image: url("../img/intro-triangle-desktop.png");
+    background-size: 1200px 57px;
+  }
 }

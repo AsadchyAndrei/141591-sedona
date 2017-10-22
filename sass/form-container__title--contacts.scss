@@ -4,6 +4,7 @@
 
 @media (min-width: $tablet-width) {
   .form-container__title--contacts {
+    width: 100%;
     margin-bottom: 25px;
     position: relative;
   }
@@ -12,7 +13,7 @@
     content: "";
     position: absolute;
     top: 11px;
-    left: -185px;
+    left: 0;
     width: 125px;
     height: 1px;
     background-color: lightgrey;
@@ -22,7 +23,7 @@
     content: "";
     position: absolute;
     top: 11px;
-    right: -185px;
+    right: 0;
     width: 125px;
     height: 1px;
     background-color: lightgrey;
