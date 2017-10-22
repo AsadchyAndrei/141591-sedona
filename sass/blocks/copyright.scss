@@ -1,0 +1,49 @@
+.copyright {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.copyright a {
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.copyright a:hover {
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: 41px 50px;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.copyright a:active {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  background-position: center;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: auto 44px auto 352px;
+  }
+}

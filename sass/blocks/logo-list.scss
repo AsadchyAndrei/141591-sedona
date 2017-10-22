@@ -1,0 +1,28 @@
+.logo-list {
+  background-color: transparent;
+  text-align: center;
+  height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-list {
+    width: 102px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-list {
+    width: auto;
+    height: 96px;
+  }
+
+  .logo-list img {
+    width: 188px;
+    height: auto;
+  }
+}

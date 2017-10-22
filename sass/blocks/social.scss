@@ -1,0 +1,73 @@
+.social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin: auto 0 auto auto;
+  }
+}
+
+.social__btn {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 6px;
+  position: relative;
+}
+
+.social__btn:hover,
+.social__btn:focus {
+  background-color: #669ec0;
+}
+
+.social__btn:active {
+  background-color: #5496bd;
+}
+
+.social__btn--twitter {
+  background-image: url("../img/icon-twitter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__btn--twitter:active {
+  background-image: url("../img/icon-twitter-gray.png");
+}
+
+.social__btn--facebook {
+  background-image: url("../img/icon-facebook.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__btn--facebook:active {
+  background-image: url("../img/icon-facebook-gray.png");
+}
+
+.social__btn--youtube {
+  background-image: url("../img/icon-youtube.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__btn--youtube:active {
+  background-image: url("../img/icon-youtube-gray.png");
+}
+
+.social__btn--last-child {
+  margin-right: 0;
+}
