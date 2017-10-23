@@ -3,22 +3,6 @@
   padding-bottom: 60px;
 }
 
-@media (min-width: $tablet-width) {
-  .form {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    margin-left: 120px;
-    margin-right: 120px;
-  }
-}
-
 .form__label-title {
   font-size: 14px;
   color: #333333;
@@ -31,14 +15,6 @@
   margin-left: 20px;
   margin-bottom: 5px;
   margin-right: auto;
-}
-
-@media (min-width: $desktop-width) {
-  .form__label-title--contacts {
-    margin-left: 0;
-    margin-right: 15px;
-    margin-bottom: 30px;
-  }
 }
 
 .form__input-text {
@@ -65,18 +41,6 @@
   box-sizing: border-box;
 }
 
-@media (min-width: $tablet-width) {
-  .form__input-text--contacts {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__input-text--contacts {
-    width: 257px;
-  }
-}
-
 .form__label-value {
   font-size: 18px;
   line-height: 26px;
@@ -90,29 +54,9 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: $tablet-width) {
-  .form__label-value {
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-}
-
 .form__label-value--checkbox {
   margin-top: 0;
   margin-bottom: 22px;
-}
-
-@media (min-width: $tablet-width) {
-  .form__label-value--checkbox {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__label-value--checkbox {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
 }
 
 .form__input-radio {
@@ -136,6 +80,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .form__input-text--contacts {
+    margin-bottom: 30px;
+  }
+
+  .form__label-value {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .form__label-value--checkbox {
+    margin-bottom: 30px;
+  }
+
   .form__send {
     width: 324px;
     margin-left: 0;
@@ -143,6 +107,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .form__label-title--contacts {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  .form__input-text--contacts {
+    width: 257px;
+  }
+
+  .form__label-value--checkbox {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
   .form__send {
     width: 480px;
   }

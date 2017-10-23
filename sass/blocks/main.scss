@@ -6,17 +6,8 @@
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  .main {
-    width: 768px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main {
-    width: 1200px;
-  }
+.main--index {
+  margin-bottom: 40px;
 }
 
 .main__title {
@@ -32,6 +23,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main {
+    width: 768px;
+    margin-bottom: 0;
+  }
+
+  .main--index {
+    margin-bottom: 30px;
+  }
+
   .main__title {
     width: 490px;
     margin: 0 auto 30px;
@@ -40,6 +40,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main {
+    width: 1200px;
+  }
+
   .main__title {
     width: 600px;
   }
