@@ -6,6 +6,10 @@
   background-color: #ffffff;
 }
 
+.main--index {
+  margin-bottom: 40px;
+}
+
 .main__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -22,6 +26,10 @@
   .main {
     width: 768px;
     margin-bottom: 0;
+  }
+
+  .main--index {
+    margin-bottom: 30px;
   }
 
   .main__title {
