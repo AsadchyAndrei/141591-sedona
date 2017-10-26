@@ -1,5 +1,4 @@
 .main {
-  margin-bottom: 5px;
   background-color: #ffffff;
 }
 
@@ -20,12 +19,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main {
-    margin-bottom: 0;
-  }
-
   .main--index {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .main__title {
