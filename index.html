@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -10,7 +15,7 @@
 
     <header class="header">
       <nav class="main-navigation main-navigation--opened main-navigation--nojs">
-        <!-- main-navigation--opened  - меню открыто и появляется кнопка-крестик;
+        <!-- main-navigation--opened  -  меню открыто и появляется кнопка-крестик;
         main-navigation--closed - меню закрыто и появляется кнопка-гамбургер -->
         <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-navigation__wrapper">
@@ -57,12 +62,14 @@
           <p class="advantages__description">- №1 -</p>
           <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-          <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="">
-        </picture>
-        <div class="container container--advantages container--tablet">
+        <div class="advantages__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+            <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@1x.jpg 1x, img/main-city-mobile@2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <div class="container container--advantages">
           <div class="container__align-right">
             <h3 class="advantages__title">Жилье</h3>
             <p class="advantages__description advantages__description--padding-left-none">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -83,11 +90,13 @@
           <p class="advantages__description">- №2 -</p>
           <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-          <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="">
-        </picture>
+        <div class="advantages__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@1x.jpg 1x, img/main-bridge-mobile@2x.jpg 2x" alt="">
+          </picture>
+        </div>
       </div>
       <div class="container-no-mobile">
         <div class="advantages">
@@ -119,12 +128,13 @@
         <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="btn" href="#">НАЙТИ гостиницу</a>
       </div>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="hotel__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="">
-      </picture>
-
+      <div class="main__map">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@1x.jpg 1x, img/bg-map-mobile@2x.jpg 2x" alt="">
+        </picture>
+      </div>
     </main>
 
     <footer class="footer">
@@ -141,7 +151,7 @@
           </a>
         </li>
         <li>
-          <a class="social__btn social__btn--last-child social__btn--youtube" href="#">
+          <a class="social__btn social__btn--youtube social__btn--last-child" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>

@@ -1,0 +1,10 @@
+.container-btn {
+  display: flex;
+  background-color: rgb(242, 242, 242);
+}
+
+@media (min-width: $tablet-width) {
+  .container-btn {
+    width: 640px;
+  }
+}

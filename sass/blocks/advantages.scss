@@ -2,19 +2,6 @@
   text-align: center;
 }
 
-@media (min-width: $tablet-width) {
-  .advantages {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages picture {
-    max-height: 256px;
-  }
-}
-
 .advantages__description {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -24,20 +11,6 @@
   padding-right: 15px;
 }
 
-@media (min-width: $tablet-width) {
-  .advantages__description {
-    width: 170px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__description {
-    width: 264px;
-  }
-}
-
 .advantages__description--title {
   font-size: 14px;
   line-height: 26px;
@@ -45,17 +18,9 @@
   margin-bottom: 44px;
 }
 
-@media (min-width: $tablet-width) {
-  .advantages__description--title {
-    width: 490px;
-    margin: 0 auto 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__description--title {
-    width: 600px;
-  }
+.advantages__description--padding-left-none {
+  padding: 0;
+  margin: 0;
 }
 
 .advantages__title {
@@ -69,7 +34,35 @@
   margin-bottom: 15px;
 }
 
+.advantages__title--text-white {
+  color: #ffffff;
+}
+
+.advantages__img {
+  font-size: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__description {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__description--title {
+    width: 490px;
+    margin: 0 auto 55px;
+  }
+
+  .advantages__description--padding-left-none {
+    width: 165px;
+  }
+
   .advantages__title {
     font-size: 21px;
     width: 151px;
@@ -78,23 +71,25 @@
   }
 }
 
-.advantages__title--text-white {
-  color: #ffffff;
-}
-
-.advantages__description--padding-left-none {
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__description--padding-left-none {
-    width: 165px;
-  }
-}
-
 @media (min-width: $desktop-width) {
+  .advantages picture {
+    max-height: 256px;
+  }
+
+  .advantages__description {
+    width: 264px;
+  }
+
+  .advantages__description--title {
+    width: 600px;
+  }
+
   .advantages__description--padding-left-none {
     width: 283px;
+  }
+
+  .advantages__img {
+    height: 256px;
+    overflow: hidden;
   }
 }

@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -106,6 +111,21 @@
           <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <span class="required-fields">* — обязательные поля</span>
         </form>
+
+        <div class="popup-failure">
+          <b class="review__title review__title--popup">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+          <p class="review__text review__text--popup">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="btn btn--popup-failure" type="button">OK</button>
+        </div>
+
+        <div class="popup-success">
+          <b class="review__title review__title--popup-success">Ваш отзыв отправлен!</b>
+          <p class="review__text review__text--popup-success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="container-btn">
+            <button class="btn btn--popup-success" type="button">ЗАКРЫТЬ ОКНО</button>
+          </div>
+        </div>
+
       </div>
     </main>
 
@@ -122,8 +142,8 @@
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social__btn--last-child">
-          <a class="social__btn social__btn--youtube" href="#">
+        <li>
+          <a class="social__btn social__btn--youtube social__btn--last-child" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -134,6 +154,24 @@
         </a>
       </p>
     </footer>
+<!--
+  <script>
+    var link1 = document.querySelector(".form__send");
+    var popup1 = document.querySelector(".popup-success");
+    var btnPopupSuccess = document.querySelector(".btn--popup-success");
+    var btnPopupFailure = document.querySelector(".btn--popup-failure");
 
+
+    link1.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup1.classList.add("modal-content-show");
+    });
+
+    btnPopupSuccess.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup1.classList.remove("modal-content-show");
+    });
+  </script>
+-->
   </body>
 </html>

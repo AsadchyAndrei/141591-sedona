@@ -13,8 +13,21 @@
 }
 
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
 }
 
 img {
