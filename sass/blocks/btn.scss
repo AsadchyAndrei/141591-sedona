@@ -10,6 +10,21 @@
   border: none;
 }
 
+.btn--popup-failure {
+  width: 180px;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.btn--popup-success {
+  width: 280px;
+  font-size: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 20px;
+}
+
 .btn:hover,
 .btn:focus {
   background-color: #669ec0;
@@ -28,5 +43,17 @@
   .btn {
     width: 458px;
     box-sizing: border-box;
+  }
+
+  .btn--popup-failure {
+    width: 275px;
+  }
+
+  .btn--popup-success {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    font-size: 21px;
   }
 }

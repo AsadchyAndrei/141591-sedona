@@ -1,23 +1,14 @@
 .footer {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   background-color: #ffffff;
   padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: $tablet-width;
     flex-direction: row;
     margin-bottom: 25px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer {
-    width: $desktop-width;
   }
 }

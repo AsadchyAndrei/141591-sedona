@@ -1,6 +1,6 @@
-@import "blocks/scaffolding.scss";
+@import "scaffolding.scss";
 @import "blocks/header.scss";
-@import "blocks/variables.scss";
+@import "variables.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/main.scss";
 @import "blocks/advantages.scss";
@@ -11,11 +11,10 @@
 @import "blocks/title.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/visually-hidden.scss";
+@import "visually-hidden.scss";
 @import "blocks/review.scss";
 @import "blocks/media.scss";
 @import "blocks/container-no-mobile.scss";
-@import "blocks/img-logo.scss";
 @import "blocks/site-list.scss";
 @import "blocks/logo-list.scss";
 @import "blocks/video-controls.scss";
@@ -25,4 +24,8 @@
 @import "blocks/container-association.scss";
 @import "blocks/required-fields.scss";
 @import "blocks/form-icon.scss";
-@import "blocks/size-0.scss";
+@import "size-0.scss";
+@import "blocks/popup-failure.scss";
+@import "modal-content-show.scss";
+@import "blocks/popup-success.scss";
+@import "blocks/container-btn.scss";

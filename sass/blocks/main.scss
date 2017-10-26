@@ -1,22 +1,9 @@
 .main {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  .main {
-    width: 768px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main {
-    width: 1200px;
-  }
+.main__map {
+  margin-bottom: 40px;
 }
 
 .main__title {
@@ -32,6 +19,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main__map {
+    margin-bottom: 34px;
+  }
+
   .main__title {
     width: 490px;
     margin: 0 auto 30px;

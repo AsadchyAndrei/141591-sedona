@@ -47,6 +47,28 @@
   background-size: 39px 37px;
 }
 
+.container--blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.container--gray {
+  background-color: rgb(238, 238, 238);
+  color: #333333;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.container--advantages {
+  margin-bottom: 35px;
+}
+
+.container--intro {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .container__align-right {
     display: flex;
@@ -102,6 +124,32 @@
   .container__align-right:nth-child(2) {
     order: 2;
   }
+
+  .container--blue {
+    width: 256px;
+    height: 256px;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+  }
+
+  .container--gray {
+    width: 256px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  .container--order {
+    order: 2;
+  }
+
+  .container--advantages {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -109,37 +157,14 @@
     width: 400px;
     padding-bottom: 85px;
   }
-}
 
-.container--blue {
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .container--blue {
-    width: 256px;
-    height: 256px;
-    padding-top: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .container--blue {
     width: 400px;
   }
-}
 
-.container--gray {
-  background-color: rgb(238, 238, 238);
-  color: #333333;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  .container--gray {
+    width: 400px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -147,49 +172,7 @@
     border-top: 1px solid lightgray;
     margin: 0 20px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .container--gray {
-    width: 256px;
-    padding-top: 45px;
-    padding-bottom: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container--gray {
-    width: 400px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container--tablet {
-    display: flex;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container--order {
-    order: 2;
-  }
-}
-
-.container--advantages {
-  margin-bottom: 35px;
-}
-
-@media (min-width: $tablet-width) {
-  .container--advantages {
-    margin-bottom: 0;
-  }
-}
-
-.container--intro {
-  position: relative;
-}
-
-@media (max-width: $mobile-width-only) {
   .container--intro::before {
     content: "";
     position: absolute;
