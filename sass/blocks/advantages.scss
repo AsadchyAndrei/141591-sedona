@@ -38,6 +38,10 @@
   color: #ffffff;
 }
 
+.advantages__img {
+  font-size: 0;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     display: flex;
@@ -82,5 +86,9 @@
 
   .advantages__description--padding-left-none {
     width: 283px;
+  }
+
+  .advantages__img {
+    height: 256px;
   }
 }
