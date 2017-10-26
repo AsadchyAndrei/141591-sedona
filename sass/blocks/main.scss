@@ -2,7 +2,7 @@
   background-color: #ffffff;
 }
 
-.main--index {
+.main__map {
   margin-bottom: 40px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main--index {
+  .main__map {
     margin-bottom: 34px;
   }
 
