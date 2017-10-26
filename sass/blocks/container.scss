@@ -141,16 +141,14 @@
     padding-bottom: 30px;
   }
 
-  .container--tablet {
-    display: flex;
-  }
-
   .container--order {
     order: 2;
   }
 
   .container--advantages {
     margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

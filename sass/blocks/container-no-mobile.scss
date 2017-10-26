@@ -11,6 +11,7 @@
 @media (min-width: $tablet-width) {
   .container-no-mobile {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
   }
 }

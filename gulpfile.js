@@ -13,6 +13,7 @@ var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var webp = require("gulp-webp");
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -42,6 +43,12 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
+    .pipe(gulp.dest("img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
     .pipe(gulp.dest("img"));
 });
 
