@@ -39,6 +39,10 @@
   margin-bottom: 25px;
 }
 
+.review__text--popup-success {
+  width: 300px;
+}
+
 @media (max-width: $mobile-width-only) {
   .review__subject {
     border-bottom: 1px solid lightgrey;
