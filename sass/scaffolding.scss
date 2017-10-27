@@ -35,10 +35,36 @@ img {
   height: auto;
 }
 
+//input[type="radio"],
+//input[type="checkbox"] {
+//  display: none;
+//}
+
+
+
 input[type="radio"],
-input[type="checkbox"] {
-  display: none;
+input[type="radio"]:hover,
+input[type="radio"]:active,
+input[type="radio"]:focus,
+input[type="checkbox"],
+input[type="checkbox"]:hover,
+input[type="checkbox"]:active,
+input[type="checkbox"]:focus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
+
+
+
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
@@ -131,20 +157,26 @@ textarea:focus {
 }
 
 input[type="radio"] + label:hover::before,
-input[type="checkbox"] + label:hover::before {
+input[type="radio"]:focus + label::before,
+input[type="checkbox"] + label:hover::before,
+input[type="checkbox"]:focus + label::before {
   background-color: #e5e5e5;
 }
 
 input[type="radio"] + label:active::before,
-input[type="checkbox"] + label:active::before {
+input[type="radio"]:active + label::before,
+input[type="checkbox"] + label:active::before,
+input[type="checkbox"]:active + label::before {
   background-color: #d5d5d5;
 }
 
-input[type="radio"]:checked + label:active::after {
+input[type="radio"]:checked + label:active::after,
+input[type="radio"]:active + label::after {
   opacity: 0.3;
 }
 
-input[type="checkbox"]:checked + label:active::after {
+input[type="checkbox"]:checked + label:active::after,
+input[type="checkbox"]:active + label::after {
   background-image: url("../img/tick-gray.png");
 }
 
