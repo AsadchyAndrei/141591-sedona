@@ -111,18 +111,22 @@
           <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <span class="required-fields">* — обязательные поля</span>
         </form>
-
-        <div class="popup-failure">
-          <b class="review__title review__title--popup">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-          <p class="review__text review__text--popup">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="btn btn--popup-failure" type="button">OK</button>
+<!-- Для открытия попапа нужно добавить блоку-обертке "modal-content" класс "modal-content--show" -->
+        <div class="modal-content">
+          <div class="popup-failure">
+            <b class="review__title review__title--popup">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+            <p class="review__text review__text--popup">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="btn btn--popup-failure" type="button">OK</button>
+          </div>
         </div>
-
-        <div class="popup-success">
-          <b class="review__title review__title--popup-success">Ваш отзыв отправлен!</b>
-          <p class="review__text review__text--popup-success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <div class="container-btn">
-            <button class="btn btn--popup-success" type="button">ЗАКРЫТЬ ОКНО</button>
+<!-- Для открытия попапа нужно добавить блоку-обертке "modal-content" класс "modal-content--show" -->
+        <div class="modal-content">
+          <div class="popup-success">
+            <b class="review__title review__title--popup-success">Ваш отзыв отправлен!</b>
+            <p class="review__text review__text--popup-success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            <div class="container-btn">
+              <button class="btn btn--popup-success" type="button">ЗАКРЫТЬ ОКНО</button>
+            </div>
           </div>
         </div>
 
