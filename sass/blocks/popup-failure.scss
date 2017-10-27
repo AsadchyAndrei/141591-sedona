@@ -5,7 +5,7 @@
   left: 50%;
   margin-left: -160px;
   width: 320px;
-  display: flex;
+  display: none; /* для открытия: flex (.modal-content-show) */
   flex-direction: column;
   text-align: center;
   align-items: center;
